@@ -1,0 +1,231 @@
+
+
+html,
+body {
+  height: 100%;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+  color: #FFF;
+  opacity: 0.5;
+  font-size: 14px;
+    margin: 0;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover {
+    opacity: 1;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  height: auto;
+}
+
+.wrap > .container {
+  padding: 70px 15px 33px;
+  //max-width: 900px;
+  min-height: 100%;
+  height: auto;
+}
+
+.footer {
+  height: 33px;
+  background-color: #000;
+  position: relative;
+  line-height: 33px;
+  margin-top: -33px;
+}
+
+.footer .pull-right {
+  margin: 0;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+  content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+
+.grid-view th {
+  white-space: nowrap;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+.buttons {
+  text-align: center;
+  margin: 0 -15px 15px;
+  overflow: hidden;
+}
+
+.buttons > div, a {
+    margin: 0 15px 10px;
+}
+
+@media (max-width: 767px) {
+  .buttons .left {
+    float: left;
+  }
+  .buttons .right {
+    float: right;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;
+  background: rgba(0, 0, 0, 0.25);
+  display: table;
+}
+
+.fixed > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fixed .blocks {
+    max-width: 600px;
+    max-height: 90vh;
+    background: #FFF;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+}
+
+@media (max-width: 750px) {
+  .fixed .blocks {
+      width: 80vw;
+  }
+}
+
+.fixed .blocks .close-popup {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('/templates/images/exit.png') no-repeat center;
+      cursor: pointer;
+}
+
+.fixed .blocks .text {
+  padding-bottom: 20px;
+}
+
+.fixed .blocks .text a img {
+  margin-bottom: 10px;
+}
+
+.fixed .blocks .buttons-select .btn {
+  min-width: 80px;
+}
+
+.fixed .blocks .buttons-select .btn.select-yes {
+  float: right;
+}
+
+.fixed .blocks .buttons-select .btn .select-no {
+  float: left;
+}
+
+#preview-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: table;
+}
+
+#preview-block > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.block-show {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    background: #fff;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.block-show .popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
